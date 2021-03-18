@@ -1,0 +1,18 @@
+{
+  "name": "issuetracker",
+  "version": "1.0.0",
+  "description": "App to track issues in applications developed by the company during developemnt, testing and in production",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "issues",
+    "tracker",
+    "bugs",
+    "development",
+    "projects"
+  ],
+  "author": "netop consulting",
+  "license": "ISC"
+}

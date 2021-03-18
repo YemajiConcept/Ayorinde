@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IssueTracker - Tracking and resolving issues promptly is our priority.</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/font/css/all.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="index.html">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand active" aria-current="page" href="index.html">Issues Tracker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="create.html">Create Issue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="view.html">View Issues</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Severity
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="Severity">
+                            <li><a class="dropdown-item" href="#">Critical</a></li>
+                            <li><a class="dropdown-item" href="#">Moderate</a></li>
+                            <li><a class="dropdown-item" href="#">Minor</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <h2 class="d-flex justify-content-center">Report An Issue</h2><br>
+    <div class="container">
+        <form>
+            <div>
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Enter Issue here">
+            </div> <br>
+            <div>
+                <label for="issuedescription" class="form-label">Issue Description</label>
+                <textarea class="form-control" id="issuedescription" style="height: 100px"></textarea>
+            </div> <br>
+            <div>
+                <label for="severity" class="form-label">Severity</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="severity" value="critical" id="critical">
+                    <label class="form-check-label" for="critical">
+                      Critical
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="severity" value="moderate" id="moderate">
+                    <label class="form-check-label" for="moderate">
+                      Moderate
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="severity" value="minor" id="minor">
+                    <label class="form-check-label" for="minor">
+                      Minor
+                    </label>
+                </div>
+            </div><br>
+            <div>
+                <label for="Reportedby" class="form-label">Reported By</label>
+                <input type="text" class="form-control" id="reportedby" placeholder="Enter Your Name">
+            </div> <br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="3" id="resolved">
+                <label class="form-check-label" for="resolved">
+                  Resolved
+                </label>
+            </div><br>
+            <div class="row g-1">
+                <label for="Issuedate">Issue Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Reported</label>
+                <input type="date" class="form-control" style="width:49%" id="issuedate"> &nbsp; <input type="time" style="width:49%">
+            </div> <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
